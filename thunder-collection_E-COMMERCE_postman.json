@@ -1,0 +1,1170 @@
+{
+    "info": {
+        "_postman_id": "f1dd365b-e0e1-4839-bc65-ce50ed6e93b3",
+        "name": "E-COMMERCE",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "category",
+            "item": [
+                {
+                    "name": "cretae Category",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/category/create",
+                            "path": [
+                                "category",
+                                "create"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Zjc3Zjk2ZjU2MTkyYTczYjRhYWE3OCIsImVtYWlsIjoibmFkYW1hZ2VkNTc1QGdtYWlsLmNvbSIsImlhdCI6MTY5Mzk0MTc0N30.mEaqhaFNtGsyH1g3akMSBmQyJJrdUqaEXcHcpG8df2w"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "headphones",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "d:\\180 things\\1 Joj7zejs22i83DqB_d-HUw.jpeg",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "update category",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "{{url}}/category/update/64f780b4f56192a73b4aaa83",
+                            "path": [
+                                "category",
+                                "update",
+                                "64f780b4f56192a73b4aaa83"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Zjc3Zjk2ZjU2MTkyYTczYjRhYWE3OCIsImVtYWlsIjoibmFkYW1hZ2VkNTc1QGdtYWlsLmNvbSIsImlhdCI6MTY5Mzk0MTc0N30.mEaqhaFNtGsyH1g3akMSBmQyJJrdUqaEXcHcpG8df2w"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "computers",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "d:\\180 things\\81QPZ4Vgb7L._AC_UL320_.jpg",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "get all categories",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/category/get?size=4&page=1",
+                            "query": [
+                                {
+                                    "key": "size",
+                                    "value": "4"
+                                },
+                                {
+                                    "key": "page",
+                                    "value": "1"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "category",
+                                "get"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "delete category",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{url}}/category/delete/650dc92b72d27d6d51db8c04",
+                            "query": [
+                                {
+                                    "key": "categoryID",
+                                    "value": "65097b7bcb834e4e9a11f970",
+                                    "disabled": true
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "category",
+                                "delete",
+                                "650dc92b72d27d6d51db8c04"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Zjc3Zjk2ZjU2MTkyYTczYjRhYWE3OCIsImVtYWlsIjoibmFkYW1hZ2VkNTc1QGdtYWlsLmNvbSIsImlhdCI6MTY5Mzk0MTc0N30.mEaqhaFNtGsyH1g3akMSBmQyJJrdUqaEXcHcpG8df2w"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "get category by ID",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/category/getbyid/64f78268f56192a73b4aaa90",
+                            "path": [
+                                "category",
+                                "getbyid",
+                                "64f78268f56192a73b4aaa90"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Zjc3Zjk2ZjU2MTkyYTczYjRhYWE3OCIsImVtYWlsIjoibmFkYW1hZ2VkNTc1QGdtYWlsLmNvbSIsImlhdCI6MTY5Mzk0MTc0N30.mEaqhaFNtGsyH1g3akMSBmQyJJrdUqaEXcHcpG8df2w"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "sub category",
+            "item": [
+                {
+                    "name": "create sub category",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/category/create/65097c77d9d683905c95004d",
+                            "path": [
+                                "category",
+                                "create",
+                                "65097c77d9d683905c95004d"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Zjc3Zjk2ZjU2MTkyYTczYjRhYWE3OCIsImVtYWlsIjoibmFkYW1hZ2VkNTc1QGdtYWlsLmNvbSIsImlhdCI6MTY5Mzk0MTc0N30.mEaqhaFNtGsyH1g3akMSBmQyJJrdUqaEXcHcpG8df2w"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "earphones22",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "d:\\180 things\\7-OptinMonster-Case-Studies.jpg",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "get all sub categories",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/subCategory/getall",
+                            "path": [
+                                "subCategory",
+                                "getall"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "update subcategory",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "{{url}}/subCategory/update/64f20fa403d75cd4eb0010be?categoryID=64ed2b756fa8232797efd144",
+                            "query": [
+                                {
+                                    "key": "SubcategoryID",
+                                    "value": "64ed02e60315033e7bf1ab15",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "categoryID",
+                                    "value": "64ed2b756fa8232797efd144"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "subCategory",
+                                "update",
+                                "64f20fa403d75cd4eb0010be"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "headphones9",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "d:\\180 things\\5ffb68f05b10a2e2b8b64ea20f4c7e6c.jpg",
+                                    "disabled": true,
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "get sub categoey by id",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/subCategory/getbyid/64f7841df56192a73b4aaabc",
+                            "path": [
+                                "subCategory",
+                                "getbyid",
+                                "64f7841df56192a73b4aaabc"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "delete subcategory",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{url}}/subCategory/delete/650dcbd4c0d871ad1cac526f",
+                            "path": [
+                                "subCategory",
+                                "delete",
+                                "650dcbd4c0d871ad1cac526f"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Zjc3Zjk2ZjU2MTkyYTczYjRhYWE3OCIsImVtYWlsIjoibmFkYW1hZ2VkNTc1QGdtYWlsLmNvbSIsImlhdCI6MTY5NTM5ODA1MX0.rjyEUk9XkXtnmZVwu1endMP73hKcbuWK5ymoFPB-ZVc"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "brand",
+            "item": [
+                {
+                    "name": "create brand",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/brand/create/?categoryID=65097c77d9d683905c95004d&subcategoryID=650dcbd4c0d871ad1cac526f",
+                            "query": [
+                                {
+                                    "key": "categoryID",
+                                    "value": "65097c77d9d683905c95004d"
+                                },
+                                {
+                                    "key": "subcategoryID",
+                                    "value": "650dcbd4c0d871ad1cac526f"
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "brand",
+                                "create"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Zjc3Zjk2ZjU2MTkyYTczYjRhYWE3OCIsImVtYWlsIjoibmFkYW1hZ2VkNTc1QGdtYWlsLmNvbSIsImlhdCI6MTY5Mzk0MTc0N30.mEaqhaFNtGsyH1g3akMSBmQyJJrdUqaEXcHcpG8df2w"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "nokia",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "d:\\180 things\\7-OptinMonster-Case-Studies.jpg",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "update brand",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "{{url}}/brand/update/64f784dcf56192a73b4aaac9",
+                            "query": [
+                                {
+                                    "key": "subcategoryID",
+                                    "value": "",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "categoryID",
+                                    "value": "64f2174f33c500649a1e56e3",
+                                    "disabled": true
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "brand",
+                                "update",
+                                "64f784dcf56192a73b4aaac9"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Zjc3Zjk2ZjU2MTkyYTczYjRhYWE3OCIsImVtYWlsIjoibmFkYW1hZ2VkNTc1QGdtYWlsLmNvbSIsImlhdCI6MTY5Mzk0MTc0N30.mEaqhaFNtGsyH1g3akMSBmQyJJrdUqaEXcHcpG8df2w"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "hawawi",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "d:\\180 things\\5ffb68f05b10a2e2b8b64ea20f4c7e6c.jpg",
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "get all brands",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/brand/getall",
+                            "query": [
+                                {
+                                    "key": "page",
+                                    "value": "1",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "size",
+                                    "value": "1",
+                                    "disabled": true
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "brand",
+                                "getall"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "get brand by id",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/brand/getbyid/65097c97d9d683905c950053",
+                            "path": [
+                                "brand",
+                                "getbyid",
+                                "65097c97d9d683905c950053"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "delete brand",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{url}}/brand/delete/650db5fb92375fdc120e7ce2",
+                            "query": [
+                                {
+                                    "key": "x",
+                                    "value": "10",
+                                    "disabled": true
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "brand",
+                                "delete",
+                                "650db5fb92375fdc120e7ce2"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Zjc3Zjk2ZjU2MTkyYTczYjRhYWE3OCIsImVtYWlsIjoibmFkYW1hZ2VkNTc1QGdtYWlsLmNvbSIsImlhdCI6MTY5NTM5ODA1MX0.rjyEUk9XkXtnmZVwu1endMP73hKcbuWK5ymoFPB-ZVc"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "product",
+            "item": [
+                {
+                    "name": "add product",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "http://localhost:5000/product/add",
+                            "query": [
+                                {
+                                    "key": " categoryID",
+                                    "value": "64ed2b756fa8232797efd144",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "subcategoryID",
+                                    "value": "64e92ebdad337eb9a5f0c935",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "brandID",
+                                    "value": "64e92ef7ad337eb9a5f0c939",
+                                    "disabled": true
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "product",
+                                "add"
+                            ],
+                            "protocol": "http",
+                            "host": [
+                                "localhost"
+                            ],
+                            "port": "5000"
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Zjc3Zjk2ZjU2MTkyYTczYjRhYWE3OCIsImVtYWlsIjoibmFkYW1hZ2VkNTc1QGdtYWlsLmNvbSIsImlhdCI6MTY5Mzk0MTc0N30.mEaqhaFNtGsyH1g3akMSBmQyJJrdUqaEXcHcpG8df2w"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "mouth",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "colors",
+                                    "value": "[\"red\",\"yellow\"]",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "good quality earphones",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "price",
+                                    "value": "20000",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "appliedDiscount",
+                                    "value": "50",
+                                    "disabled": true,
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "sizes",
+                                    "value": "[1,3,4]",
+                                    "disabled": true,
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "quantity",
+                                    "value": "7",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "categoryID",
+                                    "value": "65097c77d9d683905c95004d",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "subcategoryID",
+                                    "value": "64f7841df56192a73b4aaabc",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "brandID",
+                                    "value": "65097c97d9d683905c950053",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "coverImages",
+                                    "src": "d:\\180 things\\7-OptinMonster-Case-Studies.jpg",
+                                    "type": "file"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "d:\\180 things\\5ffb68f05b10a2e2b8b64ea20f4c7e6c.jpg",
+                                    "type": "file"
+                                },
+                                {
+                                    "key": "coverImages",
+                                    "src": "d:\\180 things\\374-3744421_video-marketing-illustration-marketing-illustration-png-transparent-png.png",
+                                    "disabled": true,
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "update product",
+                    "request": {
+                        "method": "PUT",
+                        "url": {
+                            "raw": "{{url}}/product/update/64f78633f56192a73b4aaadd",
+                            "query": [
+                                {
+                                    "key": "productID",
+                                    "value": "64e93c0aab5d17a70f4d29a0",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "categoryID",
+                                    "value": "64ed2b756fa8232797efd144",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "subcategoryID",
+                                    "value": "64e92ebdad337eb9a5f0c935",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "brandID",
+                                    "value": "64e92ef7ad337eb9a5f0c939",
+                                    "disabled": true
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "product",
+                                "update",
+                                "64f78633f56192a73b4aaadd"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Zjc3Zjk2ZjU2MTkyYTczYjRhYWE3OCIsImVtYWlsIjoibmFkYW1hZ2VkNTc1QGdtYWlsLmNvbSIsImlhdCI6MTY5Mzk0MTc0N30.mEaqhaFNtGsyH1g3akMSBmQyJJrdUqaEXcHcpG8df2w"
+                            }
+                        ],
+                        "body": {
+                            "mode": "formdata",
+                            "formdata": [
+                                {
+                                    "key": "name",
+                                    "value": "mobile cover",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "description",
+                                    "value": "highly recommended ,softest bisc",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "price",
+                                    "value": "29",
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "appliedDiscount",
+                                    "value": "25",
+                                    "disabled": true,
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "colors",
+                                    "value": "[\"yellow\",\"red\"]",
+                                    "disabled": true,
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "sizes",
+                                    "value": "[5,4]",
+                                    "disabled": true,
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "quantity",
+                                    "value": "9",
+                                    "disabled": true,
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "categoryID",
+                                    "value": "",
+                                    "disabled": true,
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "subcategoryID",
+                                    "value": "",
+                                    "disabled": true,
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "brandID",
+                                    "value": "",
+                                    "disabled": true,
+                                    "type": "default"
+                                },
+                                {
+                                    "key": "image",
+                                    "src": "d:\\180 things\\7-OptinMonster-Case-Studies.jpg",
+                                    "type": "file"
+                                },
+                                {
+                                    "key": "coverImages",
+                                    "src": "d:\\180 things\\1winner.png",
+                                    "disabled": true,
+                                    "type": "file"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "get all products",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/product/get?page=1&size=20&price[lte]=29&sort=price,-stock",
+                            "query": [
+                                {
+                                    "key": "page",
+                                    "value": "1"
+                                },
+                                {
+                                    "key": "size",
+                                    "value": "20"
+                                },
+                                {
+                                    "key": "price[lte]",
+                                    "value": "29"
+                                },
+                                {
+                                    "key": "sort",
+                                    "value": "price,-stock"
+                                },
+                                {
+                                    "key": "fields",
+                                    "value": "name,price",
+                                    "disabled": true
+                                },
+                                {
+                                    "key": "searchkey",
+                                    "value": "b",
+                                    "disabled": true
+                                }
+                            ],
+                            "variable": [],
+                            "path": [
+                                "product",
+                                "get"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "get product by id",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/product/getbyid/64f78633f56192a73b4aaadd",
+                            "path": [
+                                "product",
+                                "getbyid",
+                                "64f78633f56192a73b4aaadd"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "delete product",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{url}}/product/delete/64f53afdddbc6d19afd527f4",
+                            "path": [
+                                "product",
+                                "delete",
+                                "64f53afdddbc6d19afd527f4"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "registeration",
+            "item": [
+                {
+                    "name": "signup",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/auth/signup",
+                            "path": [
+                                "auth",
+                                "signup"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"name\":\"nada maged\",\n  \"email\":\"nadamaged200@gmail.com\",\n  \"password\":\"Nada//23\",\n  \"DOB\":\"2002-02-17\",\n  \"phone\":\"0111266378\",\n  \"role\":\"User\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "confirm email",
+                    "request": {
+                        "method": "PATCH",
+                        "url": {
+                            "raw": "{{url}}/auth/confirmemail",
+                            "path": [
+                                "auth",
+                                "confirmemail"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"email\":\"nadamaged200@gmail.com\",\n  \"code\":\"s_1Bv-\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "signIN",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/auth/signin",
+                            "path": [
+                                "auth",
+                                "signin"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"email\":\"nadamaged200@gmail.com\",\n    \"password\":\"Nada//23\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "password reset code",
+                    "request": {
+                        "method": "PATCH",
+                        "url": {
+                            "raw": "{{url}}/auth/sendCode",
+                            "path": [
+                                "auth",
+                                "sendCode"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"email\":\"nadamaged575@gmail.com\"\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "Reset password",
+                    "request": {
+                        "method": "PATCH",
+                        "url": {
+                            "raw": "{{url}}/auth/resetpass",
+                            "path": [
+                                "auth",
+                                "resetpass"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"email\":\"nadamaged575@gmail.com\",\n  \"code\":\"L11Tgt\",\n  \"password\":\"nada\"\n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "cart",
+            "item": [
+                {
+                    "name": "add to cart",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/cart/add",
+                            "path": [
+                                "cart",
+                                "add"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDY0NzA1ZDJkMmJjYzRhODg1NTQxZCIsImVtYWlsIjoibmFkYW1hZ2VkMjAwQGdtYWlsLmNvbSIsImlhdCI6MTY5NDkxMDM5Nn0.8Rn5N1vK5JedhJPaX0naO3A6w7kxn4A_PX1paa57Lfw"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"productId\":\"650e104585bccea3c7d74d36\",\n  \"quantity\":2\n}"
+                        }
+                    }
+                },
+                {
+                    "name": "delete item from cart",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{url}}/cart/delete/650e100d85bccea3c7d74d23",
+                            "path": [
+                                "cart",
+                                "delete",
+                                "650e100d85bccea3c7d74d23"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDY0NzA1ZDJkMmJjYzRhODg1NTQxZCIsImVtYWlsIjoibmFkYW1hZ2VkMjAwQGdtYWlsLmNvbSIsImlhdCI6MTY5NTQxMTk1NH0.iPQHHjShkfXy9kAa2cy7rE7_IYFQrh9tCbvVm_y-sEY"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "get user cart",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/cart/getusercart",
+                            "path": [
+                                "cart",
+                                "getusercart"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDY0NzA1ZDJkMmJjYzRhODg1NTQxZCIsImVtYWlsIjoibmFkYW1hZ2VkMjAwQGdtYWlsLmNvbSIsImlhdCI6MTY5NDkxMDM5Nn0.8Rn5N1vK5JedhJPaX0naO3A6w7kxn4A_PX1paa57Lfw"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "cupon",
+            "item": [
+                {
+                    "name": "create cupon",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/coupon/create",
+                            "path": [
+                                "coupon",
+                                "create"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0Zjc3Zjk2ZjU2MTkyYTczYjRhYWE3OCIsImVtYWlsIjoibmFkYW1hZ2VkNTc1QGdtYWlsLmNvbSIsImlhdCI6MTY5NDg4NDc0MH0.ArjNRtEfbtLz5p1KNKSxjouYp1U1veUCXPuT0TQH-As"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"code\":\"c2407\",\n  \"EXPDate\":\"2023-09-30\",\n  \"amount\":40,\n  \"numofUses\":2\n  \n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "order",
+            "item": [
+                {
+                    "name": "create order",
+                    "request": {
+                        "method": "POST",
+                        "url": {
+                            "raw": "{{url}}/order/create",
+                            "path": [
+                                "order",
+                                "create"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDY0NzA1ZDJkMmJjYzRhODg1NTQxZCIsImVtYWlsIjoibmFkYW1hZ2VkMjAwQGdtYWlsLmNvbSIsImlhdCI6MTY5NDkxMDM5Nn0.8Rn5N1vK5JedhJPaX0naO3A6w7kxn4A_PX1paa57Lfw"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "options": {
+                                "raw": {
+                                    "language": "json"
+                                }
+                            },
+                            "raw": "{\n  \"address\":\"Marotya haram,giza\",\n  \"phone\":\"0121153011189\",\n  \"paymentMethod\":\"Card\",\n  \"Cupon\":\"c2407\"\n  \n  \n}"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "wishList",
+            "item": [
+                {
+                    "name": "add to wishlist",
+                    "request": {
+                        "method": "PATCH",
+                        "url": {
+                            "raw": "{{url}}/wishList/addtowishlist/650e102e85bccea3c7d74d2f",
+                            "path": [
+                                "wishList",
+                                "addtowishlist",
+                                "650e102e85bccea3c7d74d2f"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDY0NzA1ZDJkMmJjYzRhODg1NTQxZCIsImVtYWlsIjoibmFkYW1hZ2VkMjAwQGdtYWlsLmNvbSIsImlhdCI6MTY5NTQxMTk1NH0.iPQHHjShkfXy9kAa2cy7rE7_IYFQrh9tCbvVm_y-sEY"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "get user wishlist",
+                    "request": {
+                        "method": "GET",
+                        "url": {
+                            "raw": "{{url}}/wishList/getwishlist",
+                            "path": [
+                                "wishList",
+                                "getwishlist"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDY0NzA1ZDJkMmJjYzRhODg1NTQxZCIsImVtYWlsIjoibmFkYW1hZ2VkMjAwQGdtYWlsLmNvbSIsImlhdCI6MTY5NTQxMTk1NH0.iPQHHjShkfXy9kAa2cy7rE7_IYFQrh9tCbvVm_y-sEY"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Delete from wishlist",
+                    "request": {
+                        "method": "DELETE",
+                        "url": {
+                            "raw": "{{url}}/wishList/deletefromwishlist/650e102e85bccea3c7d74d2f",
+                            "path": [
+                                "wishList",
+                                "deletefromwishlist",
+                                "650e102e85bccea3c7d74d2f"
+                            ],
+                            "host": [
+                                "{{url}}"
+                            ]
+                        },
+                        "header": [
+                            {
+                                "key": "authorization",
+                                "value": "Hamada__eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1MDY0NzA1ZDJkMmJjYzRhODg1NTQxZCIsImVtYWlsIjoibmFkYW1hZ2VkMjAwQGdtYWlsLmNvbSIsImlhdCI6MTY5NTQxMTk1NH0.iPQHHjShkfXy9kAa2cy7rE7_IYFQrh9tCbvVm_y-sEY"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
